@@ -1,0 +1,50 @@
+
+
+
+  	Register / Login
+[Logo]
+Forums Register Login
+Java » Beginning Java
+"dummy" code
+apollo abel , Ranch Hand
+Apr 01, 2006 00:22:00
++Pie
+I have written a "dummy" code, because i need to understand a concept, then apply it to other programs. So, help me solve this dummy code, it is not homework.
+what i need is:
+1. how to use a boolean properly.
+2. use the object num in the tester // i dont know why it doesnt work.
+3. make a do-while in the tester, so it will ask "enter a number" until the user enters a number greater than 10. if the user enters less than 10 i want the program to loop the question until done right.
+import java.util.Scanner;
+public class K
+{
+int goodData;
+int num;
+public K(int num)
+{
+this.num = num;
+}
+public boolean getGoodData()
+{
+if(num > 10)
+return true;
+return false;
+}
+public int getNum()
+{
+return num;
+}
+}
+class Ktester
+{
+public static void main (String [] args)
+{
+Scanner input = new Scanner(System.in);
+do
+{
+System.out.println("enter a number: ");
+int num = input.nextInt();
+K dido = new K(num);
+}
+while(dido.num);
+}
+}
